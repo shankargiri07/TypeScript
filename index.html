@@ -8,11 +8,37 @@
     <button>Submit</button>
 </form> -->
 
-<script>
+<!-- <script>
     var stock = true;
     if(stock == 1){
         document.write("Availabe");
     } else {
         document.write("Not Availabe")
+    }
+</script> -->
+
+<form>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="hidden" name="UserId" value="John_nit"></dd>
+        <dd><input type="text" name="UserName" value="John"></dd>
+        <dt>Age</dt>
+        <dd><input type="number" name="Age" value="22"></dd>
+    </dl>
+    <button>Submit</button>
+</form>
+
+<script>
+    let ProductId = Symbol();
+
+    let product = {
+        [ProductId] : 1,
+        Name : "TV",
+        Price : 35999.22
+    }
+
+    for(var property in product)
+    {
+        document.write(property + "<br>")
     }
 </script>
